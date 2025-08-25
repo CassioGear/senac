@@ -1,0 +1,33 @@
+ body {
+    margin: 0px;
+    padding: 0px;
+}
+#topo {
+    width: 980px;
+    height: 100px;
+    background-color: aquamarine;
+    margin: auto;
+}
+#logo {
+    width: 200px;
+    height: 200px;
+    background-color: goldenrod;
+    float: left;
+}
+#menu {
+    width: 780px;
+    height: 100px;
+    background-color: chartreuse;
+    float: right;
+}
+#banner {
+    width: 700px;
+    height: 400px;
+    background-color: dodgerblue;
+    margin: auto;
+}
+#topoContainer{
+    width: 980px;
+    height: 00px;
+    margin: auto;
+}
