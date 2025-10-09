@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     Carro: <img src="Camaro.jpg" id="carro" width="200" height="200" />
+    <form>
+        <input type="button" value="carro 1" onclick="carro1()" >
+        <input type="button" value="carro 2" onclick="carro2()" >
+        <input type="button" value="carro 3" onclick="carro3()" >
+    </form>
+
+    <script>
+        function carro1(){
+        document.getElementById('carro').src='Camaro.jpg';
+        }
+        function carro2(){
+        document.getElementById('carro').src='Ferrari.jpg';
+        }
+        function carro3(){
+        document.getElementById('carro').src='Opala.jpg';
+        }
+    </script>
+</body>
+</html>
