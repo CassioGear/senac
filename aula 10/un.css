@@ -1,0 +1,30 @@
+body {
+    background-color: #023e7a; 
+    margin: 0;
+    padding: 0;
+}
+
+.container-principal {
+    background-color: rgb(255, 255, 255);
+    width: 50vw; 
+    height: 60vh;
+    margin: 10vh auto; 
+    padding: 20px;
+    border-radius: 50px;
+}
+
+
+h1 {
+    text-align: center; 
+    color: #333;      
+}
+
+.imagem-personagem {
+    display: block;
+    margin: 0 auto;    
+    width: 80%;
+    height: auto;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 20px;
+}
