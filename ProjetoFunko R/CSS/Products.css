@@ -1,8 +1,3 @@
-/* ==========================================================================
-   FUNKO STORE — Catálogo, filtros e página de produto individual
-   ========================================================================== */
-
-/* --------------------------------- Catálogo -------------------------------- */
 .catalog-layout {
   display: grid;
   grid-template-columns: 260px 1fr;
@@ -106,7 +101,6 @@
 }
 .filters-panel.is-collapsed { display: none; }
 
-/* ------------------------------ Página de produto --------------------------- */
 .product-detail {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -196,7 +190,6 @@
 .pd-perk { display: flex; align-items: center; gap: 10px; font-size: 0.85rem; color: var(--gray-700); }
 .pd-perk .icon { font-size: 1.3rem; }
 
-/* ------------------------------------ Tabs ----------------------------------- */
 .pd-tabs { margin-top: 20px; border-top: 2px solid var(--funko-black); padding-top: 30px; }
 .tabs-nav { display: flex; gap: 10px; margin-bottom: 26px; flex-wrap: wrap; }
 .tabs-nav button {
