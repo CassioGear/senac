@@ -1,8 +1,3 @@
-/* ==========================================================================
-   FUNKO STORE — Catálogo de produtos (Funko.html e Promotions.html)
-   Lê CATALOG_MODE ("all" ou "promo") definido inline em cada página.
-   ========================================================================== */
-
 document.addEventListener("DOMContentLoaded", function () {
   const grid = document.querySelector("[data-catalog-grid]");
   if (!grid) return;
