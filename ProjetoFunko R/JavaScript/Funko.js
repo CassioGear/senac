@@ -1,17 +1,11 @@
-/* ==========================================================================
-   FUNKO STORE — Comportamento geral do site
-   ========================================================================== */
-
 document.addEventListener("DOMContentLoaded", function () {
 
-  /* ---------------------------- Menu mobile ---------------------------- */
   const menuToggle = document.querySelector("[data-menu-toggle]");
   const header = document.querySelector(".site-header");
   if (menuToggle && header) {
     menuToggle.addEventListener("click", () => header.classList.toggle("menu-open"));
   }
 
-  /* ------------------------------ Busca --------------------------------- */
   document.querySelectorAll("[data-search-form]").forEach(form => {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -23,7 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  /* --------------------------- Hero carousel ----------------------------- */
   const heroWindow = document.querySelector("[data-hero-window]");
   if (heroWindow) {
     const slides = FUNKO_PRODUCTS.filter(p => p.selos.includes("novidade") || p.selos.includes("mais-vendido")).slice(0, 5);
@@ -74,12 +67,10 @@ document.addEventListener("DOMContentLoaded", function () {
     start();
   }
 
-  /* ------------------------ Renderização da Home -------------------------- */
   renderHomeSection("[data-home-bestsellers]", p => p.selos.includes("mais-vendido"), 4);
   renderHomeSection("[data-home-novidades]", p => p.selos.includes("novidade"), 4);
   renderHomePromo();
 
-  /* ------------------------------ Newsletter ------------------------------ */
   document.querySelectorAll("[data-newsletter-form]").forEach(form => {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -89,7 +80,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  /* --------------------------- Contador de promoção ------------------------ */
   initCountdown();
 });
 
