@@ -1,8 +1,3 @@
-/* ==========================================================================
-   FUNKO STORE — Carrinho de compras
-   Persistido em localStorage, compartilhado entre todas as páginas.
-   ========================================================================== */
-
 const FunkoCart = (function () {
   const KEY = "funko_cart_v2";
 
@@ -110,7 +105,6 @@ function renderCartBadges() {
   });
 }
 
-/* Toast simples, reutilizável em qualquer página */
 function funkoToast(message) {
   let container = document.getElementById("funko-toast-container");
   if (!container) {
