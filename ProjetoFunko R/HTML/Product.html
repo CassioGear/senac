@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto — Funko Pop Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Funko.css">
+    <link rel="stylesheet" href="../CSS/Products.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="announce-bar">Frete grátis para compras acima de R$ 250 &nbsp;•&nbsp; Novidades de anime chegaram!</div>
+        <div class="topo">
+            <a href="Home.html" class="logo"><img src="../Imagens/images.png" alt="Funko Pop Store"></a>
+            <nav class="menu-principal">
+                <a href="Home.html">Início</a>
+                <a href="Funko.html" class="is-active">Produtos</a>
+                <a href="Promotions.html">Promoções</a>
+                <a href="About.html">Sobre nós</a>
+                <a href="Contact.html">Contato</a>
+            </nav>
+            <div class="header-actions">
+                <form class="search-box" data-search-form>
+                    <input type="text" placeholder="Buscar Funko Pop...">
+                    <button type="submit" aria-label="Buscar">🔍</button>
+                </form>
+                <a href="Cart.html" class="cart-link" aria-label="Carrinho">
+                    🛒
+                    <span data-cart-count>0</span>
+                </a>
+                <button class="menu-toggle" data-menu-toggle aria-label="Abrir menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <nav class="breadcrumb">
+            <a href="Home.html">Início</a><span class="sep">/</span>
+            <a href="Funko.html">Produtos</a><span class="sep">/</span>
+            <a href="#" data-breadcrumb-cat>Categoria</a><span class="sep">/</span>
+            <span class="current" data-breadcrumb-name>Produto</span>
+        </nav>
+
+        <div data-product-page></div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-logo">
+                    <img src="../Imagens/images.png" alt="Funko Pop Store">
+                    <p>Sua loja de colecionáveis pop culture: anime, games, filmes e muito mais em vinil, com envio para todo o Brasil.</p>
+                    <div class="social-row">
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="TikTok">TT</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="About.html">Sobre nós</a></li>
+                        <li><a href="Contact.html">Contato</a></li>
+                        <li><a href="#">Trabalhe conosco</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="#">Trocas e devoluções</a></li>
+                        <li><a href="#">Prazo de entrega</a></li>
+                        <li><a href="#">Formas de pagamento</a></li>
+                        <li><a href="#">Perguntas frequentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="Funko.html?categoria=anime">Anime</a></li>
+                        <li><a href="Funko.html?categoria=games">Games</a></li>
+                        <li><a href="Funko.html?categoria=marvel">Marvel</a></li>
+                        <li><a href="Funko.html?categoria=star-wars">Star Wars</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Fique por dentro</h4>
+                    <p>Cadastre seu e-mail e receba cupons e lançamentos em primeira mão.</p>
+                    <form class="newsletter-form" data-newsletter-form>
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2025 Funko Pop Store. Todos os direitos reservados. Projeto acadêmico, sem afiliação com a Funko, Inc.</span>
+                <div class="payment-icons">
+                    <span>PIX</span><span>VISA</span><span>MASTER</span><span>BOLETO</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JavaScript/products-data.js"></script>
+    <script src="../JavaScript/cart.js"></script>
+    <script src="../JavaScript/Funko.js"></script>
+    <script src="../JavaScript/product-page.js"></script>
+</body>
+</html>

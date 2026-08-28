@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra — Funko Pop Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Funko.css">
+    <link rel="stylesheet" href="../CSS/Cart.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="announce-bar">Ambiente de compra seguro 🔒</div>
+        <div class="topo">
+            <a href="Home.html" class="logo"><img src="../Imagens/images.png" alt="Funko Pop Store"></a>
+            <nav class="menu-principal">
+                <a href="Home.html">Início</a>
+                <a href="Funko.html">Produtos</a>
+                <a href="Promotions.html">Promoções</a>
+                <a href="About.html">Sobre nós</a>
+                <a href="Contact.html">Contato</a>
+            </nav>
+            <div class="header-actions">
+                <a href="Cart.html" class="cart-link" aria-label="Carrinho">
+                    🛒
+                    <span data-cart-count>0</span>
+                </a>
+                <button class="menu-toggle" data-menu-toggle aria-label="Abrir menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <nav class="breadcrumb">
+            <a href="Home.html">Início</a><span class="sep">/</span>
+            <a href="Cart.html">Carrinho</a><span class="sep">/</span>
+            <span class="current">Finalizar Compra</span>
+        </nav>
+        <h1>Finalizar Compra</h1>
+
+        <div data-checkout-page></div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-bottom" style="border-top:none; padding-top:0;">
+                <span>&copy; 2025 Funko Pop Store. Todos os direitos reservados. Projeto acadêmico, sem afiliação com a Funko, Inc.</span>
+                <div class="payment-icons">
+                    <span>PIX</span><span>VISA</span><span>MASTER</span><span>BOLETO</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JavaScript/products-data.js"></script>
+    <script src="../JavaScript/cart.js"></script>
+    <script src="../JavaScript/Funko.js"></script>
+    <script src="../JavaScript/cart-page.js"></script>
+</body>
+</html>

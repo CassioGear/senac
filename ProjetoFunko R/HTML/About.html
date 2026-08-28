@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós — Funko Pop Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/Funko.css">
+    <style>
+        .timeline { display: grid; gap: 0; max-width: 760px; margin: 0 auto; }
+        .timeline-item { display: grid; grid-template-columns: 90px 1fr; gap: 24px; padding-bottom: 34px; position: relative; }
+        .timeline-item::before {
+            content: ""; position: absolute; left: 44px; top: 30px; bottom: 0; width: 2px; background: var(--gray-300);
+        }
+        .timeline-item:last-child::before { display: none; }
+        .timeline-year { font-family: var(--font-display); font-size: 1.6rem; color: var(--funko-red); text-align: right; padding-top: 2px; }
+        .timeline-content { background: var(--white); border: 2px solid var(--funko-black); border-radius: var(--radius-m); padding: 18px 20px; }
+        .timeline-content h3 { margin-bottom: 6px; }
+        .values-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+        .value-card { background: var(--white); border: 2px solid var(--funko-black); border-radius: var(--radius-m); padding: 26px 20px; text-align: center; }
+        .value-card .icon { font-size: 2rem; margin-bottom: 12px; }
+        .about-hero { background: var(--funko-black); color: #fff; padding: 70px 0; text-align: center; }
+        .about-hero h1 { color: #fff; }
+        .about-hero p { color: var(--gray-300); max-width: 680px; margin: 0 auto; }
+        .stats-row { display: flex; justify-content: center; gap: 60px; margin-top: 40px; flex-wrap: wrap; }
+        .stats-row .stat strong { display: block; font-family: var(--font-display); font-size: 2.4rem; color: var(--funko-yellow); }
+        .stats-row .stat span { font-family: var(--font-ui); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--gray-300); }
+        .info-cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .info-card { background: var(--white); border: 2px solid var(--funko-black); border-radius: var(--radius-m); overflow: hidden; }
+        .info-card img { width: 100%; height: 170px; object-fit: cover; }
+        .info-card .info-body { padding: 20px; }
+        @media (max-width: 860px) {
+            .timeline-item { grid-template-columns: 60px 1fr; }
+            .values-grid { grid-template-columns: 1fr 1fr; }
+            .info-cards-grid { grid-template-columns: 1fr; }
+            .stats-row { gap: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="announce-bar">Frete grátis para compras acima de R$ 250 &nbsp;•&nbsp; Novidades de anime chegaram!</div>
+        <div class="topo">
+            <a href="Home.html" class="logo"><img src="../Imagens/images.png" alt="Funko Pop Store"></a>
+            <nav class="menu-principal">
+                <a href="Home.html">Início</a>
+                <a href="Funko.html">Produtos</a>
+                <a href="Promotions.html">Promoções</a>
+                <a href="About.html" class="is-active">Sobre nós</a>
+                <a href="Contact.html">Contato</a>
+            </nav>
+            <div class="header-actions">
+                <form class="search-box" data-search-form>
+                    <input type="text" placeholder="Buscar Funko Pop...">
+                    <button type="submit" aria-label="Buscar">🔍</button>
+                </form>
+                <a href="Cart.html" class="cart-link" aria-label="Carrinho">
+                    🛒
+                    <span data-cart-count>0</span>
+                </a>
+                <button class="menu-toggle" data-menu-toggle aria-label="Abrir menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="about-hero">
+            <div class="container">
+                <span class="eyebrow" style="color:var(--funko-yellow);">Nossa história</span>
+                <h1>Feito por fãs, para fãs</h1>
+                <p>Nascemos da vontade de ter, em um único lugar, tudo que colecionadores brasileiros procuram: variedade de franquias, preço justo e a certeza de que cada peça é original.</p>
+                <div class="stats-row">
+                    <div class="stat"><strong>22+</strong><span>Modelos disponíveis</span></div>
+                    <div class="stat"><strong>6</strong><span>Categorias</span></div>
+                    <div class="stat"><strong>4.7</strong><span>Avaliação média</span></div>
+                    <div class="stat"><strong>100%</strong><span>Produtos licenciados</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="section-head" style="justify-content:center; text-align:center;">
+                <div style="width:100%;">
+                    <span class="eyebrow">De onde viemos</span>
+                    <h2>Nossa linha do tempo</h2>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-year">2019</span>
+                    <div class="timeline-content">
+                        <h3>O início da coleção</h3>
+                        <p>Um pequeno estoque em casa e a paixão por vinis colecionáveis deram origem à ideia de transformar o hobby em loja.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-year">2021</span>
+                    <div class="timeline-content">
+                        <h3>Primeira loja virtual</h3>
+                        <p>Lançamos o catálogo online com os primeiros lançamentos de anime, games e cinema, unindo curadoria e preço justo.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-year">2023</span>
+                    <div class="timeline-content">
+                        <h3>Expansão do catálogo</h3>
+                        <p>Chegamos a mais de 20 franquias diferentes e passamos a oferecer promoções semanais e frete para todo o Brasil.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-year">2025</span>
+                    <div class="timeline-content">
+                        <h3>Nova loja, nova experiência</h3>
+                        <p>Reformulamos completamente o site para trazer páginas de produto, carrinho e checkout no padrão dos grandes e-commerces do setor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" style="background:var(--funko-cream-alt);">
+            <div class="container">
+                <div class="section-head" style="justify-content:center; text-align:center;">
+                    <div style="width:100%;">
+                        <span class="eyebrow">O que nos guia</span>
+                        <h2>Nossos valores</h2>
+                    </div>
+                </div>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="icon">✅</div>
+                        <h3>Autenticidade</h3>
+                        <p>Todos os produtos são 100% oficiais e licenciados, direto de distribuidores autorizados.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="icon">💬</div>
+                        <h3>Comunidade</h3>
+                        <p>Ouvimos os colecionadores para trazer os lançamentos mais pedidos antes de qualquer um.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="icon">📦</div>
+                        <h3>Cuidado na entrega</h3>
+                        <p>Embalagem reforçada pensada para a caixa chegar intacta, sem amassados ou arranhões.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="icon">💸</div>
+                        <h3>Preço justo</h3>
+                        <p>Promoções reais, sem infladas de preço para depois parecer desconto.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section container">
+            <div class="section-head" style="justify-content:center; text-align:center;">
+                <div style="width:100%;">
+                    <span class="eyebrow">Saiba mais</span>
+                    <h2>Fique por dentro da empresa</h2>
+                </div>
+            </div>
+            <div class="info-cards-grid">
+                <div class="info-card">
+                    <img src="../Imagens/Blog.jpg" alt="Funko Blog">
+                    <div class="info-body">
+                        <h3>Blog</h3>
+                        <p>Novidades, curiosidades e bastidores do universo pop culture.</p>
+                        <a href="#" class="btn btn-outline btn-sm">Visitar o blog</a>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="../Imagens/Locations.jpg" alt="Lojas físicas">
+                    <div class="info-body">
+                        <h3>Lojas físicas</h3>
+                        <p>Encontre o ponto de retirada ou loja parceira mais próxima de você.</p>
+                        <a href="#" class="btn btn-outline btn-sm">Ver locais</a>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="../Imagens/Careers.jpg" alt="Trabalhe conosco">
+                    <div class="info-body">
+                        <h3>Trabalhe conosco</h3>
+                        <p>Vagas abertas para quem também é apaixonado por colecionáveis.</p>
+                        <a href="#" class="btn btn-outline btn-sm">Ver vagas</a>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="../Imagens/Leader.jpg" alt="Liderança">
+                    <div class="info-body">
+                        <h3>Liderança</h3>
+                        <p>Conheça quem está por trás das decisões e curadoria da loja.</p>
+                        <a href="#" class="btn btn-outline btn-sm">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="../Imagens/Investors.jpg" alt="Investidores">
+                    <div class="info-body">
+                        <h3>Investidores</h3>
+                        <p>Números, crescimento e as próximas metas do nosso negócio.</p>
+                        <a href="#" class="btn btn-outline btn-sm">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <img src="../Imagens/images3.jpg" alt="Nossa comunidade">
+                    <div class="info-body">
+                        <h3>Comunidade</h3>
+                        <p>Participe de sorteios, enquetes e eventos junto com outros colecionadores.</p>
+                        <a href="Contact.html" class="btn btn-outline btn-sm">Fale conosco</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-logo">
+                    <img src="../Imagens/images.png" alt="Funko Pop Store">
+                    <p>Sua loja de colecionáveis pop culture: anime, games, filmes e muito mais em vinil, com envio para todo o Brasil.</p>
+                    <div class="social-row">
+                        <a href="#" aria-label="Instagram">IG</a>
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="TikTok">TT</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="About.html">Sobre nós</a></li>
+                        <li><a href="Contact.html">Contato</a></li>
+                        <li><a href="#">Trabalhe conosco</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Ajuda</h4>
+                    <ul>
+                        <li><a href="#">Trocas e devoluções</a></li>
+                        <li><a href="#">Prazo de entrega</a></li>
+                        <li><a href="#">Formas de pagamento</a></li>
+                        <li><a href="#">Perguntas frequentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Categorias</h4>
+                    <ul>
+                        <li><a href="Funko.html?categoria=anime">Anime</a></li>
+                        <li><a href="Funko.html?categoria=games">Games</a></li>
+                        <li><a href="Funko.html?categoria=marvel">Marvel</a></li>
+                        <li><a href="Funko.html?categoria=star-wars">Star Wars</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Fique por dentro</h4>
+                    <p>Cadastre seu e-mail e receba cupons e lançamentos em primeira mão.</p>
+                    <form class="newsletter-form" data-newsletter-form>
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>&copy; 2025 Funko Pop Store. Todos os direitos reservados. Projeto acadêmico, sem afiliação com a Funko, Inc.</span>
+                <div class="payment-icons">
+                    <span>PIX</span><span>VISA</span><span>MASTER</span><span>BOLETO</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JavaScript/products-data.js"></script>
+    <script src="../JavaScript/cart.js"></script>
+    <script src="../JavaScript/Funko.js"></script>
+</body>
+</html>
